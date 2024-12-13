@@ -45,6 +45,17 @@ input {
     box-sizing: border-box;
 }
 
+input[type="number"] {
+    text-align: right; /* ইনপুট ভ্যালু ডানদিকে সঠিকভাবে অ্যালাইন */
+    padding-right: 30px; /* স্পিনার বাটনের জন্য জায়গা তৈরি */
+  }
+
+  /* স্পিনার বাটন সরিয়ে ফেলতে চাইলে */
+  input[type="number"]::-webkit-inner-spin-button, 
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* স্পিনার বাটন লুকানোর জন্য */
+    margin: 0;
+  }
 button {
     padding: 10px;
     border: none;
