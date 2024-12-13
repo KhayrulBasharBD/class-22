@@ -14,6 +14,7 @@ function addIncome(){
     if(incomeValue === 0){
         errorIncome.style.display = 'block';
         errorIncome.textContent = 'Please enter greater than 0.';
+        errorIncome.style.backgroundColor = 'red';
         incomeInput.value = '';
         updateMessage.style.display = 'none';
         return;
